@@ -1,0 +1,12 @@
+{
+  "liveServer.settings.root": "/public",
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "data/**",
+    "mensagens/**",
+    "node_modules/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts"
+  ]
+}
