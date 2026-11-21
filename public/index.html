@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Tech</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="icon" href="./assets/anel.png">
+</head>
+<body>
+
+  <div class="menu-icon" id="menuIcon">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <nav class="sidebar" id="mySidebar">
+    <a href="#animation-container">Home</a>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#contato">Contato</a>
+    <a href="https://www.linkedin.com" target="_blank">
+        <i class="devicon-linkedin-plain"></i>
+        <span>Redes Sociais</span>
+    </a>
+  </nav>
+
+  <main class="main-content" id="main">
+    <header>
+      <div id="animation-container"></div>
+      <h2 id="company-tagline"></h2>
+    </header>
+
+    <section id="quem-somos">
+      <h2>Quem Somos</h2>
+      <p>Somos a 4Tech, uma empresa jovem, formada por estudantes apaixonados por tecnologia e inovação. Nascemos da ideia de transformar conhecimento em soluções reais, desenvolvendo produtos digitais que fazem a diferença no dia a dia de pessoas e empresas.</p>
+      <p>Nos unimos no ambiente acadêmico, mas nossa visão vai muito além da sala de aula. Acreditamos que a tecnologia pode ser simples, funcional e acessível. Por isso, buscamos sempre aprender, evoluir e entregar o melhor para nossos clientes.</p>
+      
+      <h2>O que Fazemos</h2>
+      <p>Na 4Tech, oferecemos soluções sob medida em tecnologia, com foco em:</p>
+      <ul>
+        <li><strong>Desenvolvimento Web:</strong> Sites modernos, responsivos e otimizados.</li>
+        <li><strong>Sistemas Personalizados:</strong> Softwares sob demanda para eficiência empresarial.</li>
+        <li><strong>Consultoria Tech:</strong> Estratégias criativas para impulsionar seu negócio.</li>
+      </ul>
+      <p>Se você procura inovação, agilidade e uma equipe dedicada, a 4Tech é a parceira ideal para tirar seus projetos do papel.</p>
+    </section>
+
+    <section class="swiper mySwiper">
+        <h2>Nosso Time</h2>
+      <div class="swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="card__image"><img src="./assets/icone pessoa.jpeg" alt="Ana Clara Pimenta"></div>
+          <div class="card__content">
+            <span class="card__title">Desenvolvimento Web</span>
+            <span class="card__name">Ana Clara Pimenta</span>
+            <p class="card__text">Responsável pela criação e manutenção de sites, sistemas e aplicações para a internet.</p>
+            <div class="card__icons">
+              <a href="https://www.linkedin.com/in/ana-clara-pimenta-fonseca" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+              <a href="https://github.com/Ana-Clara-Pimenta-Fonseca" target="_blank"><i class="devicon-github-original"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card__image"><img src="./assets/icone pessoa.jpeg" alt="Nathalia Prozenko"></div>
+          <div class="card__content">
+            <span class="card__title">Sistemas Personalizados</span>
+            <span class="card__name">Nathália Prozenko</span>
+            <p class="card__text">Especialista em criar softwares sob demanda para otimizar processos empresariais.</p>
+            <div class="card__icons">
+              <a href="https://github.com/NathProz" target="_blank"><i class="devicon-github-original"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card__image"><img src="./assets/icone pessoa.jpeg" alt="invisivel"></div>
+          <div class="card__content">
+            <span class="card__title">Consultoria Tech</span>
+            <span class="card__name">Marcos Pereira</span> <!-- pessoa ficcticia -->
+            <p class="card__text">Oferece estratégias criativas e inovadoras para impulsionar o seu negócio no mundo digital.</p>
+            <div class="card__icons">
+              <a href="https://www.linkedin.com/in/-/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+              <a href="https://github.com/-" target="_blank"><i class="devicon-github-original"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card__image"><img src="./assets/icone pessoa.jpeg" alt="Felipe Henriques"></div>
+          <div class="card__content">
+            <span class="card__title">Consultoria Tech</span>
+            <span class="card__name">Felipe Henriques</span>
+            <p class="card__text">Ajuda empresas a tirar seus projetos do papel com agilidade e uma equipe dedicada.</p>
+            <div class="card__icons">
+              <a href="https://www.linkedin.com/in/felipe-henriques-de-almeida-da-silva-3b3506318/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+              <a href="https://github.com/Felipe-Henriques" target="_blank"><i class="devicon-github-original"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form class="contact-form" action="http://localhost:3000/api/contact" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required placeholder="Seu nome">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem..."></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="success-message" style="display:none;">Mensagem enviada com sucesso!</div>
+    </section>
+  </main>
+  
+  <footer>
+    <a href="https://www.instagram.com/4_tech_tecnologia/" target="_blank">
+     <img class="instagram" src="/assets/logo.png" alt="Logo 4Tech">
+    </a>
+     <img class="whatsapp" src="/assets/whatsapp.png" alt="Logo 4Tech">
+    </a>
+    <img class="facebook" src="/assets/facebook.png" alt="Logo 4Tech">
+    </a>
+    <p>&copy; 2026 4Tech. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script> 
+  <script>
+ 
+const container = document.getElementById('animation-container');
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setSize(container.clientWidth, container.clientHeight);
+container.appendChild(renderer.domElement);
+
+
+const canvas = document.createElement('canvas');
+canvas.width = 128;
+canvas.height = 128;
+const context = canvas.getContext('2d');
+const gradient = context.createLinearGradient(0, 0, 0, canvas.height);
+
+
+gradient.addColorStop(0.9, '#006dfa');   
+gradient.addColorStop(0.5, '#8F00FF');
+gradient.addColorStop(1, '#901b18');   
+
+context.fillStyle = gradient;
+context.fillRect(0, 0, canvas.width, canvas.height);
+const gradientTexture = new THREE.CanvasTexture(canvas);
+
+
+const torusGeometry = new THREE.TorusGeometry(8, 0.40, 32, 100);
+const ringMaterial = new THREE.MeshStandardMaterial({
+   
+    map: gradientTexture, 
+    metalness: 1,
+    roughness: 0.2,
+});
+const ring = new THREE.Mesh(torusGeometry, ringMaterial);
+scene.add(ring);
+
+const fontLoader = new THREE.FontLoader();
+fontLoader.load('https://threejs.org/examples/fonts/gentilis_regular.typeface.json', function (font) {
+    const textGeometry = new THREE.TextGeometry('4TECH', {
+        font: font,
+        size: 4,
+        height: 0.3,
+        curveSegments: 12,
+        bevelEnabled: true,
+        bevelThickness: 0.03,
+        bevelSize: 0.02,
+        bevelOffset: 0,
+        bevelSegments: 5
+    });
+    const textMaterial = new THREE.MeshStandardMaterial({ color: 0xcccccc, roughness: 0.5 });
+    const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+    textGeometry.computeBoundingBox();
+    const centerOffsetX = -0.5 * (textGeometry.boundingBox.max.x - textGeometry.boundingBox.min.x);
+    const centerOffsetY = -0.5 * (textGeometry.boundingBox.max.y - textGeometry.boundingBox.min.y);
+    textMesh.position.set(centerOffsetX, centerOffsetY, 0.5);
+    scene.add(textMesh);
+});
+
+const ambientLight = new THREE.AmbientLight(0xffffff, 2);
+scene.add(ambientLight);
+const pointLight = new THREE.PointLight(0xffffff, 1.5, 100);
+pointLight.position.set(10, 5, 5);
+scene.add(pointLight);
+
+camera.position.z = 15;
+
+function animate() {
+    requestAnimationFrame(animate);
+    ring.rotation.x += 0.005;
+    ring.rotation.y += 0.008;
+    renderer.render(scene, camera);
+}
+animate();
+
+window.addEventListener('resize', () => {
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.clientWidth, container.clientHeight);
+});
+  </script>
+</body>
+</html>
